@@ -1,43 +1,26 @@
 #include <stdio.h>
 /**
  * main - prints possible combinations of 2digits
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 {
-	int x;
-	int y;
-	int z;
-	int t;
-	int a;
-	int b;
+	int a, b;
 
-	for (x = '0'; x <= '9'; x++)
+	for (a = 0; a <= 98; a++)
 	{
-		for (y = '0'; y <= '9'; y++)
+		for (b = 0; b <= 98; b++)
 		{
-			for (z = '0'; z <= '9'; z++)
-			{
-				for (t = '0'; t <= '9'; t++)
-				{
-					a = (x * 10) + y;
-					b = (z * 10) + t;
+			putchar((a / 10) + '0');
+			putchar((a % 10) + '0');
+			putchar(' ');
+			putchar((b / 10) + '0');
+			puchar((b % 10) + '0');
 
-					if (a < b)
-					{
-						putchar(x);
-						putchar(y);
-						putchar(' ');
-						putchar(z);
-						putchar(t);
-
-						if (x == '9' && y == '8' && z == '9' && t == '8')
-							break;
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
+			if (a == 98 && b == 98)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
