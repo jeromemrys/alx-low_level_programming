@@ -10,7 +10,7 @@ int main(void)
 	x = 48;
 	y = 48;
 
-	while  (y < 58)
+	while (y < 58)
 	{
 		x = 48;
 		while (x < 58)
