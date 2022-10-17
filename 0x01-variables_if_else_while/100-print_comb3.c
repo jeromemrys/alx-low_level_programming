@@ -22,14 +22,14 @@ int main(void)
 				if (x == 57 && y == 56)
 				{
 					break;
-					putchar(',');
-					putchar(' ');
 				}
-				x++;
+				putchar(',');
+				putchar(' ');
 			}
-			y++;
+			x++;
 		}
-		putchar('\n');
-		return (0);
+		y++;
 	}
+	putchar('\n');
+	return (0);
 }
