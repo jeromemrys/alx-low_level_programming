@@ -8,7 +8,7 @@ void print_times_table(int n)
 {
 	int i, j, res;
 
-	if (n < 15 && n >= 0)
+	if (n <= 15 && n >= 0)
 	{
 		for (i = 0; i <= n; i++)
 		{
@@ -28,7 +28,7 @@ void print_times_table(int n)
 				{
 					_putchar((res % 10) + 48);
 				}
-				else if (res >= 100 && res < 100)
+				else if (res >= 10 && res < 100)
 				{
 					_putchar((res / 10) + 48);
 					_putchar((res % 10) + 48);
