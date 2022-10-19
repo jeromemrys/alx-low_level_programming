@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints alpha in lowercase
+ * print_alphabet - prints alphabets in lowercase
+ * Return: 0
  */
-void print_alphabet(void) :
+void print_alphabet(void);
 {
 	char lc;
 
