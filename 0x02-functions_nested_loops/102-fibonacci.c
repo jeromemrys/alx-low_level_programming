@@ -1,29 +1,28 @@
 #include <stdio.h>
 /**
- * main - prints firat 50 fibonacci numbers
+ * main - fibonacci number
  * Return: 0
  */
 int main(void)
 {
-	long int w, x, y, z, t;
+	unsigned long int w, x, y, z;
 
 	w = 1;
 	x = 2;
-	y = 0;
 
-	for (t = 0; t < 33; t++)
+	for (z = 0; z < 50; z++)
 	{
-		if (w % 2 == 0 && w <= 4000000)
+		if (z < 49)
 		{
-			y = y + w;
-		} else if (w > 4000000)
+			printf("%lu, ", w);
+		} else
 		{
-			break;
+			printf("%lu", w);
 		}
-		z = w;
+		y = w;
 		w = x;
-		x = z + w;
+		x = y + w;
 	}
-	printf("%ld\n", y);
+	printf("\n");
 	return (0);
 }
