@@ -15,25 +15,22 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				res = i * j;
-				if (res < 10 && j  > 0)
+				if (res < 10 && j > 0)
 				{
 					_putchar(' ');
 					_putchar(' ');
-				}
-				else if (res >= 10 && j  > 0 && res < 100)
+				} else if (res >= 10 && j > 0 && res 100)
 				{
 					_putchar(' ');
 				}
 				if (res < 10)
 				{
 					_putchar((res % 10) + 48);
-				}
-				else if (res >= 10 && res < 100)
+				} else if (res >= 10 && res < 100)
 				{
 					_putchar((res / 10) + 48);
 					_putchar((res % 10) + 48);
-				}
-				else if (res >= 100)
+				} else if (res >= 100)
 				{
 					_putchar((res / 100) + 48);
 					_putchar(((res / 10) % 10) + 48);
@@ -45,7 +42,7 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 			}
-			_putchar('\n')
+			_putchar('\n');
 		}
 	}
 }
