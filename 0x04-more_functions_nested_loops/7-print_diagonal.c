@@ -1,9 +1,9 @@
-#knclude "main.h"
+#include "main.h"
 
 /**
- * print_diagonal - draws a diagonal line
- * @n: numbers of '\' to be printed
- * Return: void
+ * print_diagonal - draws diagonal line
+ * @n: length of diaginal line
+ * Return: 0
  */
 
 void print_diagonal(int n)
@@ -13,14 +13,23 @@ void print_diagonal(int n)
 	if (n <= 0)
 	{
 		_putchar('\n');
-	}
-	for (x = 0; x <= n; x++)
+	} else
 	{
-		for (y 0; y < x; y++)
+		for (x = 0; x < n; x++)
 		{
-			_putchar(' ');
-			_putchar(\\');
+			y = x;
+			while (y >= 0)
+			{
+				if (y == 0)
+				{
+					_putchar('\\');
+				} else
+				{
+					_putchar(' ');
+				}
+				y--
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
