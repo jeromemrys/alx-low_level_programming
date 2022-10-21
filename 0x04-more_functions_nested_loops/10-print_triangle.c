@@ -2,24 +2,30 @@
 
 /**
  * print_triangle - prints a trinagle
- * @n: size of triangle
+ * @size: size of triangle
+ * Return: void
  */
-void print_triangle(int n)
+
+void print_triangle(int size)
 {
-	int h, tri;
+	int row, hashes, spaces;
 
-	if (n > 0)
+	if (size <= 0)
 	{
-		for (h = 1; h <= n; h++)
+		_putchar('\n');
+	}
+	else
+	{
+		for (row = 1; row <= size; row++)
 		{
-			for (tri = n - h; tri > 0; tri--)
+			for (spaces = size - row; spaces >= 1; spaces--)
+			{
 				_putchar(' ');
-
-			for (tri = 0; tri < h; tri++)
+			}
+			for (hashes = 1; hashes <= row; hashes++)
+			{
 				_putchar('#');
-
-			if (h == n)
-				continue;
+			}
 			_putchar('\n');
 		}
 	}
