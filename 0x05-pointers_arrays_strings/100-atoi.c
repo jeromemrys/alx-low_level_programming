@@ -2,15 +2,13 @@
 
 /**
  * _atoi - converts a string to an integer
- *  @s: the string
- *  Return: value
+ * @s: the string
+ * Return: value
  */
 int _atoi(char *s)
 {
 	int sign = 1;
-
-	usigned int num = 0;
-
+	unsigned int num = 0;
 
 	while (!('0' <= *s && *s <= '9') && *s != '\0')
 	{
