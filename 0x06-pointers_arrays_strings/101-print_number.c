@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_number - prints any integer with putchar
- * @n: number to print
- * Return: nothing
+ * print_number - Prints any integer with putchar
+ * @n: Number to print
+ * Return: Nothing
  */
 void print_number(int n)
 {
