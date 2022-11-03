@@ -21,7 +21,7 @@ int check(int a, int b)
  * @n: int
  * Return: int
  */
-is_prime_number(int n)
+int is_prime_number(int n)
 {
 	if (n == 2)
 		return (1);
