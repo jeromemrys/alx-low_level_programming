@@ -7,7 +7,7 @@
  * argv: an array of a command listed
  * Return: 0 for success
  */
-int main(int argc, char *argc[])
+int main(int argc, char *argv[])
 {
 	int result = 0, num, i, j, k;
 
@@ -22,7 +22,7 @@ int main(int argc, char *argc[])
 			}
 		}
 	}
-	for (k = q; k < argc; k++)
+	for (k = 1; k < argc; k++)
 	{
 		num = atoi(argv[k]);
 		result += num;
